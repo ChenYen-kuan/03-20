@@ -9,10 +9,11 @@
   <input type="number" id="MyData2" value=3>
 <script >
 function Button1_onclick(){
-  var a,b
+  var a,b,c
   var a =parseFloat(document.getElementById('MyData').value);
   var b =parseFloat(document.getElementById('MyData2').value);
-  document.getElementById('result').innerHTML = a - b;
+  c=a-b
+  document.getElementById('result').innerHTML = c;
 }
 </script>
 <button type="button" onclick="Button1_onclick()">=</button>
