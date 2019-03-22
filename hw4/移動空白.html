@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
+
+<script>
+ var c = document.getElementById("myCanvas");
+ var ctx = c.getContext("2d");
+ ctx.fillStyle = "#FF0000";
+ ctx.fillRect(0, 0, 200, 100);
+
+</script>
+<script language = javascript>
+ var position = 0;
+ var Timer= setInterval(function()
+ { 	ctx.fillRect(0, 0, 200, 100);
+ 	ctx.clearRect(position,0,20,50);
+ 	position++;
+ 	if(position>200){
+	position=0;
+                }
+ },30);
+</script>
+
+</body>
+</html>

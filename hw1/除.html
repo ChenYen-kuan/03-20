@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+</head>
+<body>
+  <input type="number" id="MyData" value=1>
+  /
+  <input type="number" id="MyData2" value=3>
+<script >
+function Button1_onclick(){
+  var a,b
+  var a =parseFloat(document.getElementById('MyData').value);
+  var b =parseFloat(document.getElementById('MyData2').value);
+  document.getElementById('result').innerHTML = a / b;
+}
+</script>
+<button type="button" onclick="Button1_onclick()">=</button>
+<output id="result"></output>
+</body>
+</html>

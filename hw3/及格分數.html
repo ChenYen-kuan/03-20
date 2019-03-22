@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function myFunction() {
+  var a; 
+  var a =parseFloat(document.getElementById('MyData').value);
+  var result;
+  if (a < 60) {
+    result = "Fail";
+  } else if(a<=100 & a>=60){
+    result = "Pass";
+  }
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+  <input type="number" id="MyData" value=" ">
+<p>Click the button to display pass or not:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
